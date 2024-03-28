@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Titre barre recherche -->
+    <title>CV Messager JG</title>
+
+<!-- Favicon ico barre recherche -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body onload="document.getElementById('defaultOpen').click();" class="page-container">
+
+<!-- Onglet Liste -->
+        <div class="onglet">
+            <button id="defaultOpen" onclick="openOnglet(event,'Accueil')" class="onglet-lien">Accueil</button>
+            <button onclick="openOnglet(event,'Préface')" class="onglet-lien">Préface</button>
+            <button onclick="openOnglet(event,'Expérience')" class="onglet-lien">Expérience</button>
+            <button onclick="openOnglet(event,'Formation')" class="onglet-lien">Formation</button>
+            <button onclick="openOnglet(event,'Réussite')" class="onglet-lien">Réussite</button>
+            <button onclick="openOnglet(event ,'Contact')" class="onglet-lien">Contact</button>
+            
+        </div>
+
+<!-- Onglet Accueil -->    
+<div class="onglet-contenu" id="Accueil">
+    <div class="accueil-S1">          
+        <img class="accueil-S1" src="images/banniere-jgm.png">       
+    </div>
+    <ul class="accueil-S2">
+        <li>🌟 Découvrez mon CV en ligne, une nouvelle façon de me rencontrer professionnellement! 🌟</li>
+        <li>🚀 Bienvenue sur mon espace virtuel où mon parcours professionnel prend vie avec une touche moderne et dynamique. Explorez mon CV en ligne pour découvrir mon histoire, mes compétences et mes réalisations d'une manière captivante et interactive.</li>
+        <li>💼 Ce site est ma toute première création, chaque section de mon CV est méticuleusement organisée pour vous offrir une expérience fluide et intuitive. Parcourez mes expériences professionnelles, mes compétences techniques, mes formations et bien plus encore.</li>
+        <li>🎨 Conçu pour refléter ma personnalité et mon professionnalisme, ce CV en ligne va au-delà du traditionnel format PDF en offrant une immersion totale dans mon parcours.</li>
+        <li>💡 Vous recherchez un aperçu rapide de mes compétences? Explorez ma section "Réussite" pour une vue d'ensemble concise et percutante de ce que je peux apporter à votre équipe.</li>
+        <!-- target="_blank" ouvre le lien dans un nouvel onglet--> 
+        <li>🌐 Prêt à explorer mon parcours professionnel de manière innovante? Toutefois si vous préférez accéder à mon CV au format papier il est disponible sur ce lien google drive : <a class="accueil-S3" href="https://drive.google.com/drive/folders/1RLXvJGSsIOIjtWPd5FAR8UUXPlUGK0AI?usp=sharing" target="_blank">Télécharger ici!</a></li>
+    </ul>
+      
+</div>
+    
+<!-- Onglet Préface --> 
+        <div class="onglet-contenu" id="Préface">
+            <div class="préface">
+                
+            </div>
+        </div>
+<!-- Onglet Contact --> 
+        <div class="onglet-contenu" id="Contact">
+            <div class="contact">
+                <ul>
+                Vous pouvez me contacter avec les informations suivante</li>
+                </ul>
+                <ul>
+                    <li>Site internet : <a href="https://example.com">Site internet</a></li>
+                    <li>Email : <a href="mailto:jgmessager29@gmail.com">jgmessager29@gmail.com</a></li>
+                    <li>Téléphone : <a href="tel:0634090889">06 34 09 08 89</a></li>
+                </ul>
+                <br>
+                <ul>
+                    Ou me suivre avec les informations ci-dessous</li>
+                </ul>
+            </div>                             
+        </div>
+<!-- Onglet Expérience --> 
+        <div class="onglet-contenu" id="Expérience">
+            <h3>Expérience</h3>
+            <p>Bienvenue sur la page Expérience</p>
+            <div class="picture">
+                <img src="images/img3.jpg">
+            </div>
+        </div>
+<!-- Onglet Formation --> 
+        <div class="onglet-contenu" id="Formation">
+            <h3>Formation</h3>
+            <p>Bienvenue sur la page Formation</p>
+            <div class="picture">
+                <img src="images/img4.jpg">
+            </div>
+        </div>
+<!-- Onglet Réussite -->                 
+        <div class="onglet-contenu" id="Réussite">
+            <h3>Réussite</h3>
+            <p>Bienvenue sur la page Réussite</p>
+            <div class="picture">
+                <img src="images/img4.jpg">
+            </div>
+        </div>
+
+<!-- Onglet script.js -->         
+        <script src="script.js"></script>
+        <script>
+            // Appel de la fonction pour ouvrir l'onglet Accueil lors du chargement de la page
+            document.getElementById('defaultOpen').click();
+        </script>
+   
+</body>
+</html>    
