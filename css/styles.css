@@ -93,10 +93,9 @@
     align-items: center; /* Centrer les éléments verticalement */
 }
 .contact-icon {
-    height: 30px; /* Modifier la taille des icônes selon vos préférences */
+    height: 20px; /* Modifier la taille des icônes selon vos préférences */
     width: auto; /* Garder le rapport hauteur-largeur original */
-    margin: 0 10px; /* Ajouter de la marge entre les icônes */
-    
+    margin: 0 5px; /* Ajouter de la marge entre les icônes */  
 }
 .contact-ligne {
     border-bottom: 1px solid rgb(9, 168, 208); /* Ajoute une bordure bleue en bas */
