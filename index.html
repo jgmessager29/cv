@@ -10,22 +10,21 @@
     <title>CV Messager JG</title>
 
 <!-- Favicon ico barre recherche -->
-    <link href="imgages/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 
-<body onload="document.getElementById('defaultOpen').click();" class="page-container">
+<body onload="document.getElementById('defaultOpen').click();" class="contenu-page">
 
-<!-- Onglet Liste -->
+    <!-- Onglet Liste -->
         <div class="onglet">
             <button id="defaultOpen" onclick="openOnglet(event,'Accueil')" class="onglet-lien">Accueil</button>
-            <button onclick="openOnglet(event,'Préface')" class="onglet-lien">Préface</button>
+            <button onclick="openOnglet(event ,'Contact')" class="onglet-lien">Contact</button>
+            <button onclick="openOnglet(event,'Propos')" class="onglet-lien">À propos</button>
             <button onclick="openOnglet(event,'Expérience')" class="onglet-lien">Expérience</button>
             <button onclick="openOnglet(event,'Formation')" class="onglet-lien">Formation</button>
-            <button onclick="openOnglet(event,'Réussite')" class="onglet-lien">Réussite</button>
-            <button onclick="openOnglet(event ,'Contact')" class="onglet-lien">Contact</button>
-            
+            <button onclick="openOnglet(event,'Réussite')" class="onglet-lien">Réussite</button>            
         </div>
 
 <!-- Onglet Accueil -->    
@@ -36,7 +35,7 @@
     <ul class="accueil-S2">
         <li>🚧 SITE EN CONSTRUCTION 🚧</li>
         <li></li>
-        <li>🌟 Découvrez mon CV en ligne, une nouvelle façon de me rencontrer professionnellement! 🌟</li>
+        <li>🌟 Découvrez mon curriculum vitæ en ligne, une nouvelle façon de me rencontrer professionnellement! 🌟</li>
         <li>🚀 Bienvenue sur mon espace virtuel où mon parcours professionnel prend vie avec une touche moderne et dynamique. Explorez mon CV en ligne pour découvrir mon histoire, mes compétences et mes réalisations d'une manière captivante et interactive.</li>
         <li>💼 Ce site est ma toute première création, chaque section de mon CV est méticuleusement organisée pour vous offrir une expérience fluide et intuitive. Parcourez mes expériences professionnelles, mes compétences techniques, mes formations et bien plus encore.</li>
         <li>🎨 Conçu pour refléter ma personnalité et mon professionnalisme, ce CV en ligne va au-delà du traditionnel format PDF en offrant une immersion totale dans mon parcours.</li>
@@ -47,29 +46,53 @@
       
 </div>
     
-<!-- Onglet Préface --> 
-        <div class="onglet-contenu" id="Préface">
-            <div class="préface">
-                
-            </div>
-        </div>
 <!-- Onglet Contact --> 
-        <div class="onglet-contenu" id="Contact">
-            <div class="contact">
-                <ul>
-                Vous pouvez me contacter avec les informations suivante</li>
-                </ul>
-                <ul>
-                    <li>Site internet : <a href="https://jgmessager29.github.io/cv/" target="_blank">Site internet</a></li>
-                    <li>Email : <a href="mailto:jgmessager29@gmail.com" onclick="window.open('mailto:jgmessager29@gmail.com'); return false;">jgmessager29@gmail.com</a></li>
-                    <li>Téléphone : <a href="tel:0634090889">06 34 09 08 89</a></li>
-                </ul>
-                <br>
-                <ul>
-                    Ou me suivre avec les informations ci-dessous</li>
-                </ul>
-            </div>                             
+<div class="onglet-contenu" id="Contact">
+    <div>
+        <ul class="contact-S1">
+            <li>Découvrez sur cet onglet toutes les informations nécessaires pour rester en contact!</li>
+        </ul>
+        <ul class="contact-S1">
+            <li ><img src="images/site.png"> <span>Site :</span> <a href="https://jgmessager29.github.io/cv/" target="_blank">jgmessager29.github.io/cv/</a></li>
+            <li><img src="images/maison.png"> <span>Adresse :</span> <a href="https://goo.gl/maps/Va9aeXT7a2hNiUFQ6" target="_blank">29600 Plourin-Lès-Morlaix</a></li>
+            <li><img src="images/mail.png"> <span>Courriel :</span> <a href="mailto:jgmessager29@gmail.com" onclick="window.open('mailto:jgmessager29@gmail.com'); return false;">jgmessager29@gmail.com</a></li>
+            <li><img src="images/telephone.png"> <span>Téléphone :</span> <a href="tel:+33634090889">(+33) 06 34 09 08 89</a></li>
+        </ul>
+    </div>
+    <div class="contact-ligne"></div>
+    <div>
+        <ul class="contact-S1">
+            <li>Vous pouvez télécharger ma carte de visite directement dans vos contacts</li>
+            <li><a href="vcard/jgmessager29.vcf" onclick="return confirmDownload('jgmessager29.vcf')"><span>Télécharger la carte</span></a></li>
+        </ul>
+    </div>
+    <div class="contact-ligne"></div>
+    <div>
+        <ul class="contact-S1">
+            <li>Tu peux me trouver sur d'autre plateforme en lien ci-dessous</li>
+        </ul>  
+        <ul class="contact-S2">  
+            <li><a href="https://www.linkedin.com/in/jgmessager" target="_blank"><img class="contact-icon" src="images/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://wa.me/33634090889" target="_blank"><img class="contact-icon" src="images/whatsapp.png" alt="WhatsApp"></a></li>
+            <li><a href="https://www.facebook.com/YannGwilherm" target="_blank"><img class="contact-icon" src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.deezer.com/fr/profile/368493995" target="_blank"><img class="contact-icon" src="images/deezer.png" alt="Deezer"></a></li>
+            <li><a href="https://discord.gg/regNnVch6c" target="_blank"><img class="contact-icon" src="images/discord.png" alt="Discord"></a></li>
+            <li><a href="http://steamcommunity.com/profiles/76561197992708834" target="_blank"><img class="contact-icon" src="images/steam.png" alt="Steam"></a></li>
+        </ul>
+    </div>                            
+</div>
+
+<!-- Onglet Préface --> 
+<div class="onglet-contenu" id="Propos">
+    <div class="préface">
+        <h3>À propos</h3>
+            <p>Bienvenue sur la page à propos de moi</p>
+            <div class="picture">
+                <img src="images/img3.jpg">
         </div>
+    </div>
+</div>
+
 <!-- Onglet Expérience --> 
         <div class="onglet-contenu" id="Expérience">
             <h3>Expérience</h3>
@@ -95,12 +118,17 @@
             </div>
         </div>
 
-<!-- Onglet script.js -->         
+<!-- Onglet Onglet -->         
         <script src="script.js"></script>
         <script>
             // Appel de la fonction pour ouvrir l'onglet Accueil lors du chargement de la page
             document.getElementById('defaultOpen').click();
         </script>
-   
+<!-- Onglet contact.vcf -->           
+        <script>
+            function confirmDownload(filename) {
+                return confirm("Voulez-vous télécharger la carte de visite : " + filename + " ?");
+            }
+        </script>
 </body>
 </html>    

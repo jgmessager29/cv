@@ -1,6 +1,5 @@
 /* Style Page complète */
-
-  .page-container {
+.contenu-page {
     margin: 0 auto; /* Centre le contenu horizontalement */
     max-width: 800px; /* Facultatif : limite la largeur de la page pour la rendre plus lisible */
     background-color:  rgb(29, 29, 29);
@@ -13,7 +12,8 @@
 .onglet {
     overflow: hidden;
     background-color: rgb(69, 69, 69);
-    font-size: 0; /* Supprime l'espace entre les boutons */   
+    font-size: 0; /* Supprime l'espace entre les boutons */  
+     
 }
 .onglet button:hover {
     background-color: rgb(9, 168, 208);
@@ -64,16 +64,44 @@
     color: rgb(9, 168, 208);
 }
 
-/* onglet préface */
-.contact ul{
-    text-align: center;
-    list-style-type: none; /* Supprime les puces */    
+/* onglet contact */
+.contact-S1 {
+    list-style-type: none; /* Supprime les puces par défaut */
+    text-align: center; /* Justifie le texte à l'intérieur des éléments de liste */
+    padding: 0; /* Supprime le remplissage par défaut */
 }
-.contact li{
-        padding: 5px;
-        color : rgb(9, 168, 208)
+
+.contact-S1 li{
+    padding: 10px; 
 }
-.contact a{
+.contact-S1 img {
+    height: 15px;
+    margin-right: 5px;
+}
+.contact-S1 li span {
+    color: rgb(9, 168, 208);
+}
+.contact-S1 a{
+    margin-left: 5px; /* Ajoute une marge à gauche du lien */
     text-decoration: none; /* Supprime la décoration de lien par défaut */
     color: white; /* Utilise la couleur de texte héritée */
+}
+.contact-S2 {
+    list-style-type: none; /* Supprime les puces par défaut */
+    display: flex; /* Utiliser flexbox pour aligner les éléments sur la même ligne */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+}
+.contact-icon {
+    height: 30px; /* Modifier la taille des icônes selon vos préférences */
+    width: auto; /* Garder le rapport hauteur-largeur original */
+    margin: 0 10px; /* Ajouter de la marge entre les icônes */
+    
+}
+.contact-ligne {
+    border-bottom: 1px solid rgb(9, 168, 208); /* Ajoute une bordure bleue en bas */
+    padding-bottom: 10px; /* Ajoute un espace en bas de la ligne */
+    width: 400px; /* Largeur de la ligne */
+    margin: 0 auto; /* Centre la ligne horizontalement */
+    margin-bottom: 20px; /* Espace en bas de la ligne */
 }
