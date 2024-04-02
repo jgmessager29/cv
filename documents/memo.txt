@@ -1,0 +1,13 @@
+        <ul class="expériences-S2">
+            <li class="expériences-S3">Agent d'entretien Spécialisé</li>
+            <li class="expériences-S4">IME Ar Brug · CDD</li>
+            <li class="expériences-S5">juil. 2005 - août 2005 · 2 mois</li>
+            <li class="expériences-S6">Saint-Martin-des-Champs, Bretagne, France · Sur site</li>
+            <li></li>
+            <li class="expériences-S7">⦿ Agent d'entretien espace vert</li>
+        </ul>
+        <ul class="expériences-S8">
+            <li>Responsable du bien-être des animaux</li>
+            <li>Surveillance du site et bâtiments</li>
+        </ul>  
+    </div> 

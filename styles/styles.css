@@ -1,0 +1,189 @@
+/* Style Page complète */
+.contenu-page {
+    border: 1px solid rgb(51, 51, 51); /* Ajoute une bordure*/
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    max-width: 800px; /* Facultatif : limite la largeur de la page pour la rendre plus lisible */
+    background-color:  rgb(29, 29, 29); /* Définit la couleur de fond */
+    color: #fff; /* Définit la couleur du texte */
+    align-content: center; /* Centre le contenu */
+    font-family: 'calibri', sans-serif; /* Définit la police de caractères */
+}
+/* Protection de la page */
+body {
+    user-select: none;
+    -moz-user-select: none; /* Pour Firefox */
+    -webkit-user-select: none; /* Pour Chrome, Safari et Opera */
+    -ms-user-select: none; /* Pour Internet Explorer */
+    -ms-touch-select: none; /* Pour Microsoft Edge */
+}
+
+/* Ligne séparation bleu */
+.ligne-1 {
+    height: 1px; /* Hauteur de la ligne */
+    width: 50%; /* Largeur de la ligne */
+    margin: 20px auto; /* Centre la ligne horizontalement */
+    background-color: rgb(9, 168, 208); /* Couleur de la ligne */
+    border: none; /* Supprime le cadre */
+}
+.lien-1{
+    text-decoration: none; /* Supprime la décoration de lien par défaut */
+    color: rgb(9, 168, 208); /* Définit la couleur du texte */
+}
+.lien-1:hover {
+    color: rgb(200, 100, 0);
+}
+.lien-1 a {
+    color: rgb(9, 168, 208); /* Définit la couleur du texte */
+}
+
+/* Styles pour les boutons d'onglet */
+.onglet {
+    overflow: hidden; /* Cache le contenu qui dépasse de la boîte */
+    background-color: rgb(100, 100, 100); /* Définit la couleur de fond */
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
+    display: flex;
+
+}
+.onglet button {
+    flex-grow: 1; /* Chaque bouton prend autant d'espace que possible */
+    
+    background-color: inherit; /* Hérite de la couleur de fond de l'élément parent */
+    letter-spacing: 2px; /* Définit l'espacement entre les lettres */
+    border: 1px solid rgb(51, 51, 51); /* Ajoute une bordure */
+    outline: 0; /* Supprime la bordure de mise au point */
+    color: #fff; /* Définit la couleur du texte */
+    cursor: pointer; /* Change le curseur au survol */
+    padding: 5px 10px; /* Définit le rembourrage intérieur */
+    font-size: 15px; /* Définit la taille de police */
+    transition: 0.5s; /* Ajoute une transition fluide */
+}
+.onglet button:hover {
+    background-color: rgb(9, 168, 208); /* Définit la couleur de fond au survol */
+}
+.onglet button.active {
+    background-color: rgb(29, 29, 29); /* Définit la couleur de fond pour l'onglet actif */
+    color: rgb(9, 168, 208); /* Définit la couleur du texte pour l'onglet actif */
+    border: 1px solid rgb(9, 168, 208); /* Ajoute un cadre fin de couleur */
+}
+
+/* Styles pour le contenu des onglets */
+.onglet-contenu {
+    display: none; /* Cache le contenu par défaut */
+    flex-direction: column; /* Définit la direction des éléments enfants */
+    animation: animation 0.5s ease-out; /* Ajoute une animation de sortie */
+    background:  rgb(29, 29, 29); /* Définit la couleur de fond */
+    margin-bottom: 30px; /* Ajoute une marge en bas du dernier élément */
+}
+
+/* onglet accueil */
+.accueil-S1 img {   
+    display: flex; /* Définit l'affichage des images comme éléments flexibles */
+    align-items: center; /* Centre verticalement les éléments enfants */
+    height: 100%; /* Définit la hauteur de l'image */
+    width: 100% ;   /* Définit la largeur de l'image */
+}
+.accueil-S2 {
+    list-style-type: none; /* Supprime les puces par défaut */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 0px; /* Supprime le remplissage par défaut */
+    margin: 0 20px; /* Ajoute une marge de 20px sur les côtés */
+}
+.accueil-S2 li {
+    padding: 10px; /* Définit le remplissage pour les éléments de liste */
+}
+.accueil-S3 {
+    max-height: 200px; /* Taille verticale maximale de l'image */
+    max-width: 100%; /* Limite la largeur à 100% de la largeur parente */
+}
+
+/* onglet contact */
+.contact-S1, .contact-S2, .contact-S3 {
+    list-style-type: none; /* Supprime les puces par défaut */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 0; /* Supprime le remplissage par défaut */
+}
+/* Spécifique à chaque sélecteur */
+.contact-S1 img{
+    height: 15px; /* Définit la hauteur de l'icône */
+    margin-right: 5px; /* Définit la marge à droite de l'icône */
+}
+.contact-S1 li, .contact-S2 li, .contact-S3 li {
+    padding: 10px; /* Définit le remplissage pour les éléments de liste */
+}
+.contact-S1 li span {
+    color: rgb(9, 168, 208); /* Définit la couleur du texte */
+}
+.contact-S1 a {
+    margin-left: 5px; /* Ajoute une marge à gauche du lien */
+    text-decoration: none; /* Supprime la décoration de lien par défaut */
+    color: white; /* Définit la couleur du texte */
+}
+.contact-S3 {
+    display: flex; /* Utiliser flexbox pour aligner les éléments sur la même ligne */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne si nécessaire */
+}
+.contact-S3 li {
+    margin: 0 5px; /* Ajouter un espacement à gauche et à droite de chaque icône */
+}
+
+/* onglet contact */
+.expériences-S1 {
+    list-style-type: none; /* Supprime les puces par défaut */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 0; /* Supprime le remplissage par défaut */
+    margin: 0 20px; /* Ajoute une marge de 20px sur les côtés */
+}
+.expériences-S1 li{
+    padding: 10px; /* Définit le remplissage pour les éléments de liste */
+}
+.expériences-titre-S1{
+    font-weight: bold; /* Met en gras le texte */
+    font-size: 20px; /* Définit la taille de police */
+    color: rgb(9, 168, 208); /* Définit la couleur du texte */
+}
+
+
+
+/* Option Scroll */
+.scroll-to-top-btn {
+    position: fixed; /* Position fixe pour rester visible lors du défilement */
+    bottom: 20px; /* Distance du bas de la fenêtre */
+    right: 15px; /* Distance du côté droit de la fenêtre */
+    background-color: transparent; /* Fond transparent */
+    color: rgb(9, 168, 208); /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    outline: none; /* Supprime le cadre */
+    border-radius: 40%; /* Forme de cercle */
+    width: 5px; /* Largeur */
+    height: 5px; /* Hauteur */
+    font-size: 20px; /* Taille de la police */
+    display: flex; /* Utiliser flexbox pour aligner le contenu */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    z-index: 9999; /* Position au-dessus de tous les autres éléments */
+    transition: background-color 0.3s, transform 0.3s; /* Transition fluide */
+    visibility: hidden; /* Caché par défaut */
+    opacity: 0; /* Transparent par défaut */
+    animation: blink 2s infinite; /* Animation de clignotement */
+}
+.scroll-to-top-btn.show {
+    visibility: visible; /* Rendre visible lorsqu'il est affiché */
+    opacity: 1; /* Opacité complète lorsqu'il est affiché */
+}
+.scroll-to-top-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente au survol */
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

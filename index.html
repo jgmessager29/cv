@@ -3,138 +3,136 @@
 <html lang="FR">
 
 <head>
+<!-- Méta-informations -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Indiquer peut être utilisée comme application les appareils mobiles -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="CV Messager JG">
-<!-- Titre barre recherche -->
+
+<!-- Titre et icônes -->
     <title>CV Messager JG</title>
-<!-- Icone barre recherche -->
-    <link href="favicon.ico" rel="icon">
-<!-- Icone raccourci mobile -->
+    <link href="images/favicon.ico" rel="icon">
     <link rel="icon" sizes="192x192" type="image/png" href="images/icone-192.png?v=2">
     <link rel="apple-touch-icon" sizes="192x192" type="image/png" href="images/icone-192.png">
-<!-- Mise en page site CSS --> 
-    <link rel="stylesheet" href="css/styles.css">
+
+<!-- Styles CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-
 <body onload="document.getElementById('defaultOpen').click();" class="contenu-page">
-
-    <!-- Onglet Liste -->
-        <div class="onglet">
-            <button id="defaultOpen" onclick="openOnglet(event,'Accueil')" class="onglet-lien">Accueil</button>
-            <button onclick="openOnglet(event ,'Contact')" class="onglet-lien">Contact</button>
-            <!-- <button onclick="openOnglet(event,'Propos')" class="onglet-lien">À propos</button>
-            <button onclick="openOnglet(event,'Expérience')" class="onglet-lien">Expérience</button>
-            <button onclick="openOnglet(event,'Formation')" class="onglet-lien">Formation</button>
-            <button onclick="openOnglet(event,'Réussite')" class="onglet-lien">Réussite</button>   -->          
-        </div>
-
-<!-- Onglet Accueil -->    
-<div class="onglet-contenu" id="Accueil">
-    <div class="accueil-S1">          
-        <img class="accueil-S1" src="images/banniere-jgm.png">       
+ 
+<Section id="bouton-menu">   
+<!-- Boutons pour changer d'onglet -->
+    <div class="onglet">
+        <button id="defaultOpen" onclick="openOnglet(event,'Accueil')" class="onglet-lien">Accueil</button>
+        <button onclick="openOnglet(event,'Expériences')" class="onglet-lien">Expériences</button>
+        <button onclick="openOnglet(event,'Formations')" class="onglet-lien">Formations</button>
+        <button onclick="openOnglet(event,'Réussites')" class="onglet-lien">Réussites</button>
+        <button onclick="openOnglet(event ,'Contact')" class="onglet-lien">Contact</button>       
     </div>
-    <ul class="accueil-S2">
-        <li>🚧 SITE EN CONSTRUCTION 🚧</li>
-        <li></li>
-        <li>🌟 Découvrez mon curriculum vitæ en ligne, une nouvelle façon de me rencontrer professionnellement! 🌟</li>
-        <li>🚀 Bienvenue sur mon espace virtuel où mon parcours professionnel prend vie avec une touche moderne et dynamique. Explorez mon CV en ligne pour découvrir mon histoire, mes compétences et mes réalisations d'une manière captivante et interactive.</li>
-        <li>💼 Ce site est ma toute première création, chaque section de mon CV est méticuleusement organisée pour vous offrir une expérience fluide et intuitive. Parcourez mes expériences professionnelles, mes compétences techniques, mes formations et bien plus encore.</li>
-        <li>🎨 Conçu pour refléter ma personnalité et mon professionnalisme, ce CV en ligne va au-delà du traditionnel format PDF en offrant une immersion totale dans mon parcours.</li>
-        <li>💡 Vous recherchez un aperçu rapide de mes compétences? Explorez ma section "Réussite" pour une vue d'ensemble concise et percutante de ce que je peux apporter à votre équipe.</li>
-        <!-- target="_blank" ouvre le lien dans un nouvel onglet--> 
-        <li>🌐 Prêt à explorer mon parcours professionnel de manière innovante? Toutefois si vous préférez accéder à mon CV au format papier il est disponible sur ce lien google drive : <a class="accueil-S3" href="https://drive.google.com/drive/folders/1RLXvJGSsIOIjtWPd5FAR8UUXPlUGK0AI?usp=sharing" target="_blank">Télécharger ici!</a></li>
-    </ul>
-      
-</div>
-    
+</Section>
+
+<section id="onglet-accueil">
+<!-- Onglet Accueil -->    
+    <div class="onglet-contenu" id="Accueil">
+        <div class="accueil-S1">          
+            <img class="accueil-S1" src="images/banniere.png" alt="Bannière">       
+        </div>
+        <div class="accueil-S2">
+            <li>🚧 SITE EN CONSTRUCTION 🚧</li>
+            <li></li>
+            <li>🌟 Bienvenue sur mon curriculum vitæ sur ce site qui est ma toute première création, organisée dans l'idée de vous offrir une expérience fluide et intuitive.</li>
+            <li>💼 Mon parcours prend vie en vous présentant mes réalisations, mes expériences professionnelles, mes compétences techniques, mes formations et bien plus encore.</li>  
+            <li>🎨 Conçu pour refléter ma personnalité et mon professionnalisme, ce CV en ligne va au-delà du traditionnel format PDF en offrant une immersion totale dans mon parcours.</li>
+<!-- Ligne -->        
+        <hr class="ligne-1">
+            <li>🌐 Vous pouvez accéder à mon CV au format PDF disponible sur le lien ci-dessous</li>
+<!-- target="_blank" ouvre le lien dans un nouvel onglet-->
+            <li><a class="lien-1" href="https://drive.google.com/drive/folders/1RLXvJGSsIOIjtWPd5FAR8UUXPlUGK0AI?usp=sharing" target="_blank">Télécharger ici!</a></li>
+            <li><img class="accueil-S3" src="images/curriculum.png" alt="Curriculum"></li>
+        </div>        
+    </div>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">&#x1F53C;</button>
+</section>
+
+<section id="onglet-contact">
 <!-- Onglet Contact --> 
-<div class="onglet-contenu" id="Contact">
-    <div>
+    <div class="onglet-contenu" id="Contact">
+<!-- Onglet Contact : Personnel -->         
         <ul class="contact-S1">
-            <li>Découvrez sur cet onglet toutes les informations nécessaires pour rester en contact!</li>
-        </ul>
-        <ul class="contact-S1">
-            <li ><img src="images/site.png"> <span>Site :</span> <a href="https://jgmessager29.github.io/cv/" target="_blank">jgmessager29.github.io/cv/</a></li>
+            <li>Découvrez sur cet onglet toutes les informations nécessaires pour prendre contact!</li>
+            <li><img src="images/site.png"> <span>Site :</span> <a href="https://jgmessager29.github.io/cv/" target="_blank">jgmessager29.github.io/cv/</a></li>
             <li><img src="images/maison.png"> <span>Adresse :</span> <a href="https://goo.gl/maps/Va9aeXT7a2hNiUFQ6" target="_blank">29600 Plourin-Lès-Morlaix</a></li>
             <li><img src="images/mail.png"> <span>Courriel :</span> <a href="mailto:jgmessager29@gmail.com" onclick="window.open('mailto:jgmessager29@gmail.com'); return false;">jgmessager29@gmail.com</a></li>
-            <li><img src="images/telephone.png"> <span>Téléphone :</span> <a href="tel:+33634090889">(+33) 06 34 09 08 89</a></li>
+            <li><img src="images/telephone.png"> <span>Téléphone :</span> <a href="tel:+33634090889">(+33) 06 34 09 08 89</a></li>           
+        </ul>
+<!-- Ligne -->        
+        <hr class="ligne-1">  
+        <ul class="contact-S2">      
+<!-- Onglet Contact : Contact mobile -->        
+            <li>Vous pouvez télécharger ma carte de visite directement dans vos contacts</li>        
+            <li><a class="lien-1" href="documents/vcard/jgmessager29.vcf" onclick="return confirmDownload('jgmessager29.vcf')">Télécharger la carte</a></li>
+<!-- Ligne -->           
+        <hr class="ligne-1">
+<!-- Onglet Contact : Réseaux -->   
+            <li>Tu peux me trouver sur d'autres plateformes en lien ci-dessous</li>
+        </ul>
+        <ul class="contact-S3">      
+            <li><a href="https://www.linkedin.com/in/jgmessager" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://wa.me/33634090889" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a></li>
+            <li><a href="https://www.facebook.com/YannGwilherm" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.deezer.com/fr/profile/368493995" target="_blank"><img src="images/deezer.png" alt="Deezer"></a></li>
+            <li><a href="https://discord.gg/regNnVch6c" target="_blank"><img src="images/discord.png" alt="Discord"></a></li>
+            <li><a href="http://steamcommunity.com/profiles/76561197992708834" target="_blank"><img src="images/steam.png" alt="Steam"></a></li>
         </ul>
     </div>
-    <div class="contact-ligne"></div>
-    <div>
-        <ul class="contact-S1">
-            <li>Vous pouvez télécharger ma carte de visite directement dans vos contacts</li>
-            <li><a href="vcard/jgmessager29.vcf" onclick="return confirmDownload('jgmessager29.vcf')"><span>Télécharger la carte</span></a></li>
-        </ul>
-    </div>
-    <div class="contact-ligne"></div>
-    <div>
-        <ul class="contact-S1">
-            <li>Tu peux me trouver sur d'autre plateforme en lien ci-dessous</li>
-        </ul>  
-        <ul class="contact-S2">  
-            <li><a href="https://www.linkedin.com/in/jgmessager" target="_blank"><img class="contact-icon" src="images/linkedin.png" alt="LinkedIn"></a></li>
-            <li><a href="https://wa.me/33634090889" target="_blank"><img class="contact-icon" src="images/whatsapp.png" alt="WhatsApp"></a></li>
-            <li><a href="https://www.facebook.com/YannGwilherm" target="_blank"><img class="contact-icon" src="images/facebook.png" alt="Facebook"></a></li>
-            <li><a href="https://www.deezer.com/fr/profile/368493995" target="_blank"><img class="contact-icon" src="images/deezer.png" alt="Deezer"></a></li>
-            <li><a href="https://discord.gg/regNnVch6c" target="_blank"><img class="contact-icon" src="images/discord.png" alt="Discord"></a></li>
-            <li><a href="http://steamcommunity.com/profiles/76561197992708834" target="_blank"><img class="contact-icon" src="images/steam.png" alt="Steam"></a></li>
-        </ul>
-    </div>                            
-</div>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">&#x1F53C;</button>
+</section>
 
-<!-- Onglet Préface --> 
-<div class="onglet-contenu" id="Propos">
-    <div class="préface">
-        <h3>À propos</h3>
-            <p>Bienvenue sur la page à propos de moi</p>
-        <div class="picture">
-                <img src="images/img3.jpg">
-        </div>
-    </div>
-</div>
-
+<section id="onglet-expériences">
 <!-- Onglet Expérience --> 
-        <div class="onglet-contenu" id="Expérience">
-            <h3>Expérience</h3>
-            <p>Bienvenue sur la page Expérience</p>
-            <div class="picture">
-                <img src="images/img3.jpg">
-            </div>
+    <div class="onglet-contenu" id="Expériences">
+        <ul class="expériences-S1">
+            <li class="expériences-titre-S1">Présentation</li>
+            <li>Avec plus de 17 ans d'expérience dans le domaine de la métallurgie, j'adopte une approche collaboratrice, axée sur le soutien que j'apporte à mes collègues et ceux de manière altruiste.</li>
+            <li>Je suis imaginatif et je fais preuve de proposition pour apporter des outils numériques pour faciliter le travail de l'équipe, et le gain de productivité.</li>
+        </ul> 
+<!-- Ligne -->        
+        <hr class="ligne-1"> 
+        <div class="accueil-S2">
+            <li></li>
+            <li>🚧 EN CONSTRUCTION 🚧</li>
         </div>
-<!-- Onglet Formation --> 
-        <div class="onglet-contenu" id="Formation">
-            <h3>Formation</h3>
-            <p>Bienvenue sur la page Formation</p>
-            <div class="picture">
-                <img src="images/img4.jpg">
-            </div>
-        </div>
-<!-- Onglet Réussite -->                 
-        <div class="onglet-contenu" id="Réussite">
-            <h3>Réussite</h3>
-            <p>Bienvenue sur la page Réussite</p>
-            <div class="picture">
-                <img src="images/img4.jpg">
-            </div>
-        </div>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">&#x1F53C;</button>
+</section>
 
-<!-- Onglet Onglet -->         
-        <script src="script.js"></script>
-        <script>
-            // Appel de la fonction pour ouvrir l'onglet Accueil lors du chargement de la page
-            document.getElementById('defaultOpen').click();
-        </script>
-<!-- Onglet contact.vcf -->           
-        <script>
-            function confirmDownload(filename) {
-                return confirm("Voulez-vous télécharger la carte de visite : " + filename + " ?");
-            }
-        </script>
+<section id="onglet-formations">
+<!-- Onglet Formation --> 
+    <div class="onglet-contenu" id="Formations">
+        <div class="accueil-S2">
+            <li></li>
+            <li>🚧 EN CONSTRUCTION 🚧</li>
+        </div>
+    </div>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">&#x1F53C;</button>
+</section>
+
+<section id="onglet-reussites">
+<!-- Onglet Réussite -->                 
+    <div class="onglet-contenu" id="Réussites">
+        <div class="accueil-S2">
+            <li></li>
+            <li>🚧 EN CONSTRUCTION 🚧</li>
+        </div>
+    </div>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">&#x1F53C;</button>
+</section>
+
+<section id="lancement-script">
+<!-- Scripts -->
+    <script src="scripts/script.js"></script>
+</section>
+
 </body>
 </html>    
