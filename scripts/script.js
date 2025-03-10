@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Script Questionnement pour télécharger contact.vcf
 function confirmDownload(filename) {
-  return confirm("Voulez-vous télécharger la carte de visite : " + filename + " ?");
+  return confirm("Voulez-vous télécharger le fichier : " + filename + " ?");
 }
 
 // Désactive le clic droit
